@@ -1,0 +1,20 @@
+SMAP
+property_005flisting_005fresult_jsp.java
+JSP
+*S JSP
+*F
++ 0 property_listing_result.jsp
+property_listing_result.jsp
+*L
+1,35:57
+35:124,11
+36:135
+37,10:136,3
+47:166
+48,2:167,3
+50,6:173
+55,2:94
+56:203,8
+57,2:211
+58,9:98
+*E
