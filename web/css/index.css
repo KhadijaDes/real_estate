@@ -1,0 +1,129 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background image to the body */
+body {
+    background-image: url('images/hero-image.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+  
+    color: #333; /* Text color on the background image */
+}
+
+body::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background color */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Place it below the content */
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.2); /* Transparent black background */
+    color: white;
+    padding: 10px 0;
+    display: flex; /* Use flexbox for layout */
+}
+
+nav h2 {
+    margin: 0;
+ padding-left:45%;
+    font-size: 24px;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    
+    padding-right: 40px;
+    font-size: 16px;
+     
+}
+
+/* Add some spacing between the logo and links */
+.spacer {
+    flex: 1;
+}
+
+/* Style the container for the main content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Style the footer */
+/* Updated footer styles for a sticky footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #section-1 .img-box {
+    height: 160px !important;
+  }
+  #section-3 .img-box {
+    height: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #section-1 .img-box {
+    height: 76px;
+  }
+  #section-2 .img-container {
+    width: 100%;
+  }
+  #section-3 .img-box {
+    height: 110px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #section-1 .img-box {
+    height: 115px;
+  }
+  #section-3 .img-box {
+    height: 115px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #section-1 .img-box {
+    height: 165px;
+  }
+  #section-3 .img-box {
+    height: 165px;
+  }
+}

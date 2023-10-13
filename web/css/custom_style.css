@@ -1,0 +1,6 @@
+.max-lines-2 {
+  max-height: 2em; /* You can adjust this value as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
